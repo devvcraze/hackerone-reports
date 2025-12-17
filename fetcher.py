@@ -20,7 +20,7 @@ hacktivity_url = 'https://hackerone.com/hacktivity/overview?queryString=disclose
 page_loading_timeout = 10
 
 def create_argument_parser():
-    argparser = argparse.ArgumentParser()
+    argparser = argparse.ArgumentPa\
     argparser.add_argument(
         '--browser-binary',
         type=str,
@@ -125,3 +125,4 @@ if __name__ == '__main__':
     parser = create_argument_parser()
     args = parser.parse_args()
     fetch(args)
+
